@@ -11,18 +11,22 @@ import java.util.regex.*;
 public class SockMerchant {
 
     static int sockMerchant(int n, int[] ar) {
-		Hashtable<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		
-		ht.put(0, null);
-		
+		int pairCount = 0;
     	for(int i=0; i<ar.length; i++){
     		int num = ar[i];
-    		 
     		
-    		
+    		if(map.get(num) == null){
+    			map.put(num, num);
+    		}
+    		else if(map.get(num) == num){
+    			pairCount++;
+    			map.remove(num);
+    		}
     	}
     	
-    	return n;
+    	return pairCount;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -44,7 +48,7 @@ public class SockMerchant {
         }
 
         int result = sockMerchant(n, ar);
-
+        
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
 
