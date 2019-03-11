@@ -15,7 +15,7 @@ public class SockMerchant {
 		
 		int pairCount = 0;
     	for(int i=0; i<ar.length; i++){
-    		int num = ar[i];
+    		int num = ar[i]; 
     		
     		if(hs.contains(num)){
     			pairCount++;
