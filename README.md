@@ -1,2 +1,2 @@
-# algorithmTest
-알고리즘 정리
+# Solutions
+ 정리
