@@ -14,7 +14,7 @@ public class SockMerchant {
     	HashSet<Integer> hs = new HashSet<>();
 		
 		int pairCount = 0;
-    	for(int i=0; i<ar.length; i++){
+    	for(int i=0; i<ar.length; i++){ 
     		int num = ar[i]; 
     		
     		if(hs.contains(num)){
