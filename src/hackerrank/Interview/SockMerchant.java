@@ -11,18 +11,18 @@ import java.util.regex.*;
 public class SockMerchant {
 
     static int sockMerchant(int n, int[] ar) {
-		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+    	HashSet<Integer> hs = new HashSet<>();
 		
 		int pairCount = 0;
     	for(int i=0; i<ar.length; i++){
     		int num = ar[i];
     		
-    		if(map.get(num) == null){
-    			map.put(num, num);
-    		}
-    		else if(map.get(num) == num){
+    		if(hs.contains(num)){
     			pairCount++;
-    			map.remove(num);
+    			hs.remove(num);
+    		}
+    		else{
+    			hs.add(num);
     		}
     	}
     	
@@ -32,7 +32,6 @@ public class SockMerchant {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -49,11 +48,7 @@ public class SockMerchant {
 
         int result = sockMerchant(n, ar);
         
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
-
+        System.out.println(result);
         scanner.close();
     }
     
