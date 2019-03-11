@@ -23,7 +23,7 @@ public class SockMerchant {
     		}
     		else{
     			hs.add(num);
-    		}
+    		} 
     	}
     	
     	return pairCount;
