@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class GradingStudents {
 
-
     static int[] gradingStudents(int[] grades) {
     	
     	for (int i = 0; i < grades.length; i++) {
