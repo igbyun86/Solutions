@@ -28,6 +28,18 @@ public class CountingValleys {
 			}
 			
 			if("D".equals(str)) preD++; 
+			
+			/*
+			if (ch == 'U') {
+                level++;
+                if (level == 0) {
+                    numValleys++; 
+                }
+            } else if (ch == 'D') {
+                level--;
+            }
+            */
+			
 		}
 		
 		return valleyCount;
