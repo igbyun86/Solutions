@@ -17,7 +17,7 @@ public class Day02 {
 		double tax = meal_cost * tax_percent /100.0;
 		double total = meal_cost + tip + tax;   
 		
-		int totalCost = (int) Math.abs(total);
+		int totalCost = (int) Math.round(total);
 		
 		System.out.println(totalCost);
     }
