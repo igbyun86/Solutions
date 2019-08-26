@@ -6,7 +6,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		
-		int i = 4;
+	int i = 4;
         double d = 4.0;
         String s = "HackerRank ";
 		
