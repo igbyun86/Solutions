@@ -10,20 +10,14 @@ public class Solution {
         double d = 4.0;
         String s = "HackerRank ";
 		
-        Scanner scan = new Scanner(System.in);
-
-        int n = scan.nextInt();
-        double l = scan.nextDouble();
+	Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt() + i;
+        double l = scan.nextDouble() + d;
         scan.nextLine();
-        String str = scan.nextLine();
+        String str = s + scan.nextLine();
         
-        int a = n + i;
-        l = Double.parseDouble(String.format("%.1f",l));
-        l = l + d;
         
-        str = s + str;
-        
-        System.out.println(a);
+        System.out.println(num);
         System.out.println(l);
         System.out.println(str);
 
