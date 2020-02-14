@@ -1,8 +1,6 @@
-package hackerRank.days30.day28;
+package hackerrank.days30.day28;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;

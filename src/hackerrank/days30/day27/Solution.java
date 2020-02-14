@@ -1,4 +1,4 @@
-package hackerRank.days30.day27;
+package hackerrank.days30.day27;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
