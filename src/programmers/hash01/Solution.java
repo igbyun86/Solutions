@@ -1,7 +1,7 @@
 package programmers.hash01;
 
-import java.util.*;
-import java.util.Map.Entry;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 완주하지 못한 선수
